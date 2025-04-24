@@ -1,0 +1,104 @@
+*{
+    box-sizing: border-box;
+}
+body{
+    margin: 0;
+    font-size: 1rem;
+    font-family: "Inter", sans-serif;
+}
+img{
+    width: 100%;
+}
+/* container */
+.container{
+    max-width: 900px;
+    margin: 0 auto;
+    padding: 4em;
+    background-color: #E5E5FD;
+    border: 10px solid #1D1E4C;
+}
+
+/* Profile container */
+.profile{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: column;
+}
+.profile-pic-container{
+    width: 300px;
+    height: 320px;
+}
+.profile-pic{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    border-radius: 50%;
+}
+.profile-text{
+    margin-top: 2em;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+}
+.profile-name{
+    font-size: 2.5rem;
+    font-weight: 400;
+    text-align: center;
+    margin-bottom: 0;
+}
+.dates{
+    margin-top: .5em;
+    font-size: 1.5rem;
+}
+
+/* content container  */
+
+.content-title{
+    font-size: 2.5rem;
+    font-weight: 400;
+    text-align: center;
+    margin-bottom: .2em;
+}
+.content-text{
+    margin-top: 0;
+    line-height: 1.5;
+    letter-spacing: 1;
+    font-size: 0.75rem;
+}
+
+/* bio container */
+.bio{
+    margin-top: 2em;
+}
+.bio-title{
+    font-size: 1.125rem;
+    font-weight: 400;
+}
+.bio-list{
+    font-size: 0.75rem;
+}
+
+/* footer */
+footer{
+    margin-top: 3em;
+    margin-left: auto;
+    width: fit-content;
+    font-size: 0.875rem;
+}
+
+
+/* media queries */
+@media (min-width:800px) {
+    .profile{
+        flex-direction: row;
+    }
+    .profile-text{
+        align-items: end;
+    }
+    .content-title{
+        font-size: 4.5rem;
+        text-align: left;
+    }
+}
