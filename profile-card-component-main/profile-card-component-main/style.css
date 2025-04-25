@@ -1,0 +1,93 @@
+*,*::after,*::before{
+    box-sizing: border-box;
+}
+body{
+    margin: 0;
+    font-size: 1.125rem;
+    background: hsl(185, 75%, 39%);
+    font-family: "Kumbh Sans", sans-serif;
+    color: hsl(229, 23%, 23%);
+}
+
+/* Typography */
+
+/* layout */
+.container{
+    height: 100vh;
+    width: 100%;
+    margin: 0 auto;
+    max-width: 800px;
+    padding: 1em;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.card{
+    background: #fff;
+    border-radius: 10px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    max-width: 580px;
+}
+.card-img{
+    background: url('images/bg-pattern-card.svg');
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: end;
+    background-color: #fff;
+    justify-content: center;
+    min-height: 150px;
+    position: relative;
+}
+.profile-img-container{
+    position: absolute;
+    bottom: -30%;
+    padding: .25em;
+    border-radius: 50%;
+    background: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.profile-img{
+    width: 100%;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+.profile-info{
+    padding:1em;
+    margin-top: 2em;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.profile-name{
+    font-weight: 700;
+    font-size: 1.5rem;
+    margin-bottom: 0;
+}
+.age,.city{
+    font-weight: 400;   
+    color: hsl(227, 10%, 46%);
+}
+.stats{
+    border-top: 1px solid hsl(0, 0%, 59%);
+    display: flex;
+    justify-content: space-around;
+    text-align: center;
+    padding: 1em;
+}
+.stat{
+    font-weight: 700;
+}
+.label{
+    font-weight: 400;
+    display: block;
+    font-size: 0.85rem;
+    letter-spacing: 1px;
+    color: hsl(0, 0%, 59%);
+}
